@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import generalInfo from "../../content/Fakülte/generalInfo.js";
 
 const Vizyon = () => {
   return (
-    <div>Vizyon</div>
-  )
-}
+    <div className="p-4 max-w-3xl mx-auto">
+      <h1 className="text-2xl font-bold mb-4">{generalInfo.vision.title}</h1>
+      <p>{generalInfo.vision.content}</p>
+    </div>
+  );
+};
 
-export default Vizyon
+export default Vizyon;

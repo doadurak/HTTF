@@ -20,8 +20,7 @@ import EnerjiSistemleriMühendisliği from "./pages/Bölümler/EnerjiSistemleriM
 import AkademikKadro from "./pages/Akademik/AkademikKadro";
 import AkademikTakvim from "./pages/Akademik/AkademikTakvim";
 import { useState } from "react";
-import Intro from "./components/Intro"
-
+import Intro from "./components/Intro";
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -56,6 +55,7 @@ function App() {
 
                 <Route path="/iletisim" element={<Iletisim />}>
                   <Route path="dekanamesaj" element={<DekanaMesaj />} />
+                  <Route path="Iletisim" element={<Iletisim />} />
                 </Route>
 
                 <Route path="/bolumler">
