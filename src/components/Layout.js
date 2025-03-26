@@ -1,17 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
-import QuickMenu from "./QuickMenu"; // QuickMenu'yu ekledik
+import QuickMenu from "./QuickMenu";
 
 const SharedLayout = () => {
   return (
     <>
       <Navbar />
-      <QuickMenu /> {/* Hızlı Menü butonunu Navbar altında çağırıyoruz */}
+      <QuickMenu /> 
       <Outlet />
     </>
   );
 };
 
 export default SharedLayout;
-
