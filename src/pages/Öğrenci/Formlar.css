@@ -1,0 +1,19 @@
+.main-div{
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+    color: chocolate;
+}
+
+a:hover{
+    color: black;
+    transition: 300ms;
+}

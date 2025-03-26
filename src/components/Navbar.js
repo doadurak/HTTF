@@ -1,12 +1,21 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
+import HttfLogo from "../content/logo/HttfLogo.svg";
 
 const Navbar = () => {
   const [isFacultyOpen, setIsFacultyOpen] = useState(false);
 
   return (
     <nav className="navbar">
+      <a href="/">
+        <img
+          className="nav-img"
+          width={200}
+          height={200}
+          src={HttfLogo}
+          alt="Hasan Ferdi Turgutlu Teknoloji Fakültesi"
+        />
+      </a>
       <div className="main-link">
         <Link to="/">Hasan Ferdi Turgutlu Teknoloji Fakültesi</Link>
       </div>
@@ -39,7 +48,6 @@ const Navbar = () => {
             </div>
           )}
         </div>
-
         <Link to="/">İdari</Link>
         <Link to="/">Akademik</Link>
         <Link to="/">Öğrenci</Link>

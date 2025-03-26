@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
 import Vizyon from "./pages/Fakülte/Vizyon";
 import Misyon from "./pages/Fakülte/Misyon";
 import DekanMesaji from "./pages/Fakülte/DekanMesaji";
@@ -19,6 +18,8 @@ import MekatronikMühendisliği from "./pages/Bölümler/MekatronikMühendisliğ
 import EnerjiSistemleriMühendisliği from "./pages/Bölümler/EnerjiSistemleriMühendisliği";
 import AkademikKadro from "./pages/Akademik/AkademikKadro";
 import AkademikTakvim from "./pages/Akademik/AkademikTakvim";
+import Formlar from "./pages/Öğrenci/Formlar";
+import Kulüpler from "./pages/Öğrenci/Kulüpler";
 import { useState } from "react";
 import Intro from "./components/Intro";
 import Footer from "./components/Footer"; // Footer eklendi
@@ -40,8 +41,8 @@ function App() {
           <>
             <Routes>
               <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
-                <Route path="/about" element={<About />} />
+
+                <Route path="/" element={<Home />} />
                 <Route path="/fakulte">
                   <Route path="vizyon" element={<Vizyon />} />
                   <Route path="misyon" element={<Misyon />} />
@@ -53,7 +54,9 @@ function App() {
                   <Route path="fakultekurulu" element={<FakulteKurulu />} />
                   <Route path="yonetimkurulu" element={<YonetimKurulu />} />
                 </Route>
-                <Route path="/iletisim" element={<Iletisim />}>
+
+                <Route path="/iletisim">
+                  <Route path="" element={<Iletisim/>}/>
                   <Route path="dekanamesaj" element={<DekanaMesaj />} />
                 </Route>
                 <Route path="/bolumler">
@@ -67,10 +70,12 @@ function App() {
                   <Route path="akademiktakvim" element={<AkademikTakvim />} />
                   <Route path="akademikkadro" element={<AkademikKadro />} />
                 </Route>
+                <Route path="/ogrenci">
+                  <Route path="formlar" element={<Formlar />} />
+                  <Route path="kulupler" element={<Kulüpler />} />
+                </Route>
               </Route>
             </Routes>
-
-            {/* Footer bileşeni burada, her sayfanın sonunda gösterilir */}
             <Footer />
             <ScrollToTopButton />
           </>
