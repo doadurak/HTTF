@@ -26,22 +26,6 @@
   
   .links {
     display: flex;
-  }
-  
-  .links a {
-    color: #333;
-    text-decoration: none;
-    position: relative;
-  }
-  
-  .dropdown {
-    position: relative;
-  }
-  
-  .mega-menu {
-    position: absolute;
-    top: 40px;
-    left: 0;
     flex-wrap: nowrap;
     gap: 25px;
     align-items: center;
@@ -84,12 +68,12 @@
     justify-content: space-around;
     height: 50vh;
 }
+
   
   .mega-column {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
   }
   
   .mega-column h4 {

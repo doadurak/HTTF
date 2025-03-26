@@ -17,7 +17,7 @@ const Navbar = () => {
         />
       </a>
       <div className="main-link">
-        <Link to="/">Hasan Ferdi Turgutlu Teknoloji Fakültesi</Link>
+        <a href="/">Hasan Ferdi Turgutlu Teknoloji Fakültesi</a>
       </div>
       <div className="links">
         <div
@@ -25,7 +25,7 @@ const Navbar = () => {
           onMouseEnter={() => setIsFacultyOpen(true)}
           onMouseLeave={() => setIsFacultyOpen(false)}
         >
-          <Link to="/">Fakülte</Link>
+          <a to="/">Fakülte</a>
           {isFacultyOpen && (
             <div className="mega-menu">
               <div className="mega-column">
@@ -48,11 +48,11 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <Link to="/">İdari</Link>
-        <Link to="/">Akademik</Link>
-        <Link to="/">Öğrenci</Link>
-        <Link to="/">Bölümler</Link>
-        <Link to="/">İletişim</Link>
+        <a href="/">İdari</a>
+        <a href="/">Akademik</a>
+        <a href="/">Öğrenci</a>
+        <a href="/">Bölümler</a>
+        <a href="/">İletişim</a>
       </div>
     </nav>
   );
