@@ -20,8 +20,9 @@ import EnerjiSistemleriMühendisliği from "./pages/Bölümler/EnerjiSistemleriM
 import AkademikKadro from "./pages/Akademik/AkademikKadro";
 import AkademikTakvim from "./pages/Akademik/AkademikTakvim";
 import { useState } from "react";
-import Intro from "./components/Intro"
-
+import Intro from "./components/Intro";
+import Footer from "./components/Footer"; // Footer eklendi
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -39,7 +40,7 @@ function App() {
           <>
             <Routes>
               <Route path="/" element={<Layout />}>
-                <Route path="/" element={<Home />} />
+                <Route index element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/fakulte">
                   <Route path="vizyon" element={<Vizyon />} />
@@ -47,92 +48,36 @@ function App() {
                   <Route path="dekanmesaji" element={<DekanMesaji />} />
                   <Route path="bilgi" element={<Bilgi />} />
                 </Route>
-
                 <Route path="/idari">
                   <Route path="dekanlik" element={<Dekanlik />} />
                   <Route path="fakultekurulu" element={<FakulteKurulu />} />
                   <Route path="yonetimkurulu" element={<YonetimKurulu />} />
                 </Route>
-
                 <Route path="/iletisim" element={<Iletisim />}>
                   <Route path="dekanamesaj" element={<DekanaMesaj />} />
                 </Route>
-
                 <Route path="/bolumler">
-                  <Route
-                    path="elektrikmuhendisligi"
-                    element={<ElektrikMühendisliği />}
-                  />
-                  <Route
-                    path="yazilimmuhendisligi"
-                    element={<YazılımMühendisliği />}
-                  />
-                  <Route
-                    path="makinemuhendisligi"
-                    element={<MakineMühendisliği />}
-                  />
-                  <Route
-                    path="mekatronikmuhendisligi"
-                    element={<MekatronikMühendisliği />}
-                  />
-                  <Route
-                    path="enerjisistemlerimuhendisligi"
-                    element={<EnerjiSistemleriMühendisliği />}
-                  />
+                  <Route path="elektrikmuhendisligi" element={<ElektrikMühendisliği />} />
+                  <Route path="yazilimmuhendisligi" element={<YazılımMühendisliği />} />
+                  <Route path="makinemuhendisligi" element={<MakineMühendisliği />} />
+                  <Route path="mekatronikmuhendisligi" element={<MekatronikMühendisliği />} />
+                  <Route path="enerjisistemlerimuhendisligi" element={<EnerjiSistemleriMühendisliği />} />
                 </Route>
-
                 <Route path="/akademik">
                   <Route path="akademiktakvim" element={<AkademikTakvim />} />
                   <Route path="akademikkadro" element={<AkademikKadro />} />
                 </Route>
               </Route>
             </Routes>
+
+            {/* Footer bileşeni burada, her sayfanın sonunda gösterilir */}
+            <Footer />
+            <ScrollToTopButton />
           </>
         </BrowserRouter>
       )}
     </>
   );
 }
-
-// return  (
-//   <BrowserRouter>
-//     <Routes>
-//       <Route path="/" element={<Layout />}>
-//       <Route path="/" element={<Home />} />
-//       <Route path="/about" element={<About />} />
-//       <Route path='/fakulte'>
-//         <Route path="vizyon" element={<Vizyon/>} />
-//         <Route path="misyon" element={<Misyon />} />
-//         <Route path="dekanmesaji" element={<DekanMesaji />} />
-//         <Route path="bilgi" element={<Bilgi />} />
-//       </Route>
-
-//       <Route path='/idari'>
-//         <Route path="dekanlik" element={<Dekanlik />} />
-//         <Route path="fakultekurulu" element={<FakulteKurulu/>} />
-//         <Route path="yonetimkurulu" element={<YonetimKurulu />} />
-//       </Route>
-
-//       <Route path='/iletisim' element={<Iletisim />}>
-//         <Route path="dekanamesaj" element={<DekanaMesaj />} />
-//       </Route>
-
-//       <Route path='/bolumler'>
-//         <Route path="elektrikmuhendisligi" element={<ElektrikMühendisliği />} />
-//         <Route path="yazilimmuhendisligi" element={ <YazılımMühendisliği/>} />
-//         <Route path="makinemuhendisligi" element={<MakineMühendisliği />} />
-//         <Route path="mekatronikmuhendisligi" element={<MekatronikMühendisliği />} />
-//         <Route path="enerjisistemlerimuhendisligi" element={<EnerjiSistemleriMühendisliği />} />
-//       </Route>
-
-//       <Route path='/akademik'>
-//         <Route path='akademiktakvim' element={<AkademikTakvim/>}/>
-//         <Route path='akademikkadro' element={<AkademikKadro/>}/>
-//       </Route>
-
-//       </Route>
-//     </Routes>
-//   </BrowserRouter>
-//   );
 
 export default App;

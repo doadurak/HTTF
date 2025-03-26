@@ -1,8 +1,13 @@
 import React from "react";
 import "./Footer.css";
 import HttfLogo from "../content/logo/HttfLogo.svg";
+import { FaArrowUp } from "react-icons/fa"; // ok için FontAwesome
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -23,6 +28,9 @@ function Footer() {
           <a href="#">KVKK</a>
           <a href="#">S.S.S.</a>
           <a href="#">İletişim</a>
+          <button className="scroll-top-btn" onClick={scrollToTop} title="Yukarı Çık">
+            <FaArrowUp />
+          </button>
         </div>
       </div>
     </footer>
