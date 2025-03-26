@@ -1,0 +1,48 @@
+.main {
+  text-align: center;
+}
+
+.header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 45px;
+}
+
+.kulüp-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+h3 {
+  color: cornflowerblue;
+}
+
+.kulüp {
+  width: 25%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 4px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+span {
+  color: chocolate;
+}
+
+
+@media (max-width:1024px) {
+    .kulüp{
+        width: 40%;
+    }
+}
+
+@media (max-width:740px) {
+    .kulüp{
+        width: 70%;
+    }
+}
