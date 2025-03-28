@@ -25,6 +25,8 @@ import Intro from "./components/Intro";
 import Footer from "./components/Footer"; // Footer eklendi
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
+
+
 function App() {
   const [showIntro, setShowIntro] = useState(true);
 
@@ -58,6 +60,7 @@ function App() {
                 <Route path="/iletisim">
                   <Route path="" element={<Iletisim/>}/>
                   <Route path="dekanamesaj" element={<DekanaMesaj />} />
+                  <Route path="Iletisim" element={<Iletisim />} />
                 </Route>
                 <Route path="/bolumler">
                   <Route path="elektrikmuhendisligi" element={<ElektrikMühendisliği />} />
