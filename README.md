@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# 🏆 HTTF – Frontend Challenge Hackathon Projesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**HTTF**, 5 saatlik bir sürede tamamlanan ve **birincilik ödülü** kazanan bir React tabanlı frontend geliştirme projesidir. Bu proje, Manisa Celal Bayar Üniversitesi **Hasan Ferdi Turgutlu Teknoloji Fakültesi** için modern, kullanıcı dostu bir web sitesi arayüzü tasarlamak amacıyla, bir **Frontend Challenge Hackathonu** kapsamında geliştirilmiştir.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🥇 Hackathon Bilgisi
 
-### `npm start`
+- 🎯 **Etkinlik:** Frontend Challenge Hackathon  
+- 🏫 **Konu:** Hasan Ferdi Turgutlu Teknoloji Fakültesi Web Sitesi Tasarımı  
+- ⏱️ **Süre:** 5 Saat  
+- 🏆 **Sonuç:** **1.lik Ödülü**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💡 Proje Amacı
 
-### `npm test`
+Amaç, mevcut fakülte web sitesinin arayüzünü daha modern, erişilebilir ve mobil uyumlu hale getirmekti. Kısıtlı sürede kullanıcı deneyimini önceliklendiren, bileşen bazlı ve yeniden kullanılabilir bir React mimarisi kurgulandı.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Özellikler
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🎨 Modern ve kullanıcı dostu arayüz
+- 📱 Mobil uyumlu tasarım (Responsive)
+- ⚡ Hızlı yüklenme süresi ve sade navigasyon
+- 🧩 Bileşen tabanlı yapı (Reusable Components)
+- 📁 Temiz kod yapısı ve okunabilirlik
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Kullanılan Teknolojiler
 
-### `npm run eject`
+| Teknoloji        | Açıklama                            |
+|------------------|-------------------------------------|
+| React            | UI bileşen yapısı                   |
+| JavaScript (ES6) | Uygulama mantığı                    |
+| HTML5 & CSS3     | Sayfa yapısı ve stil                |
+| Create React App | Proje oluşturma ve geliştirme ortamı |
+| (Opsiyonel) Tailwind CSS | Hızlı ve sade tasarım için     |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
+## 📁 Klasör Yapısı
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+HTTF/
+ public/ # Statik içerikler
+ src/
+   components/ # React bileşenleri
+   App.js # Ana uygulama bileşeni
+   index.js # Uygulama giriş noktası
+package.json # Proje bağımlılıkları
+README.md # Proje açıklaması
