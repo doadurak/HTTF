@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import fakulte1 from '../content/images/Fakulte1.jpg'; 
+import fakulte2 from '../content/images/Fakulte2.jpg';
+import fakulte3 from '../content/images/Fakulte3.jpg';
+import fakulte4 from '../content/images/Fakulte4.jpg';
+import Fakulte7 from '../content/images/Fakulte7.png';
 
 const images = [
-  '/images/fakulte1.jpg',
-  '/images/fakulte2.jpg',
-  '/images/fakulte3.jpg',
+  fakulte1,
+  Fakulte7,
+  fakulte2,
+  fakulte3,
+  fakulte4,
   // ihtiyaca göre artır
 ];
 
